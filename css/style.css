@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  color: #333333;
 }
 
 .container {
@@ -477,6 +478,29 @@ template {
   text-transform: uppercase;
 }
 
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 18px 0;
+  list-style: none;
+  color: #0A223D;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: #0A223D;
+}
+
+.breadcrumb-list__link::after {
+  content: '/';
+  margin: 0 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -551,6 +575,7 @@ template {
     border: none;
     cursor: pointer;
     background-color: #fff;
+    padding: 0;
   }
   .menu-btn__line {
     width: 16px;
@@ -560,5 +585,81 @@ template {
   .logo {
     width: 99px;
   }
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.hotel-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-advantage__name-hotel {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.hotel-advantage__descript {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel-ratting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #EC1F46;
+  border-radius: 5px;
+  padding: 8px 8px 0px;
+}
+
+.hotel-ratting__user {
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: capitalize;
+}
+
+.hotel-ratting__user-mark {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */
